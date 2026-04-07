@@ -27,7 +27,7 @@ public class Portefeuille
 			return false ;
 		}
 		
-		if ( this.monnaie.getNom() != destination.getMonnaie().getNom() ) // Condition de monnaie semblable
+		if ( ! this.monnaie.getNom().equals(destination.getMonnaie().getNom()) ) // Condition de monnaie semblable
 		{
 			return false ;
 		}
@@ -47,13 +47,14 @@ public class Portefeuille
 	 */
 	public boolean achatDevise (double montantEuros)
 	{
-		double valeurAjouter = montantEuros * this.monnaie.getValeurDeJeton() ;
+		if (montantEuros >= 0)
+		{
+			this.montant += montantEuros / this.monnaie.getValeurDeJeton();
+			
+			return true;
+		}
 		
-		if ( valeurAjouter <= 0 ) { return false ; }
-		
-		this.montant += valeurAjouter ;
-		
-		return true ;
+		return false;
 	}
 	
 	/**
