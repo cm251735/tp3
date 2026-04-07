@@ -29,7 +29,7 @@ public class CryptoMarche {
 	 */
 	public double capitalEnEuros(String proprietaire)
 	{
-		double capitalProprio = 0;
+		double capitalProprio = 0.0;
 		
 		for (int index = 0; index < this.portefeuilles.size(); index++)
 		{
@@ -51,7 +51,7 @@ public class CryptoMarche {
 	 */
 	public double capitalMonneaie(Cryptomonnaie monnaie)
 	{
-		double capital = 0;
+		double capital = 0.0;
 		
 		for (int index = 0; index < this.portefeuilles.size(); index++)
 		{
@@ -59,7 +59,7 @@ public class CryptoMarche {
 			Cryptomonnaie tmpCrypto       =      tmpPorteFeuille.getMonnaie();
 			
 			if ( monnaie.getNom().equals(tmpCrypto.getNom()) )
-				capital += monnaie.getValeurDeJeton() * tmpPorteFeuille.getMontant();
+				capital += tmpPorteFeuille.valeurEnEuros();
 			
 		}
 		
