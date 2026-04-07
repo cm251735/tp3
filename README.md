@@ -14,3 +14,4 @@ Création d'un nouveau répertoire
 Invitiation d'un collaborateur sur un répertoire
 Modification par le collaborateur du répertoire
 Synchronisation des dépots du propriétaire et du collaborateur
+Nous avons maintenant créé une nouvelle branche de test
