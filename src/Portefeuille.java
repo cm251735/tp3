@@ -33,6 +33,7 @@ public class Portefeuille
 		}
 		
 		this.montant -= montantJetons ;
+		destination.montant += montantJetons ;
 		
 		return true ;
 	}
