@@ -1,0 +1,132 @@
+/* 
+ * Page de Style des exercices du TP7
+ */
+
+body
+{
+	background-color : #babfbb ;
+	font-family      : arial   ;
+	margin           : 0 ;
+	padding          : 0 ;
+}
+
+header
+{
+	/* Box Properties */
+	border-style                 : solid ;
+	border-color                 : #262b27 ;
+	border-width                 : 2px ;
+	border-collapse              : separate ;
+	border-bottom-left-radius    : 10px ;
+	border-bottom-right-radius   : 10px ;
+	padding-top                  : 5px ;
+	padding-bottom               : 10px ;
+	box-shadow                   : 0px 0px 4px 1px ;
+	margin-bottom                : 10px ;
+	width                        : 100 ;
+	
+	/* Background Properties */
+	background-color   : #708273 ;
+}
+
+nav
+{
+	/* Position Properties */
+	float    : left;
+	top      : 10px ;
+	position : sticky ;
+	
+	/* Box Properties */
+	border       : 2px solid #262b27 ;
+	height       : 100% ;
+	width        : 150px ;
+	box-shadow   : 0px 0px 4px 1px ;
+	
+	/* Background Properties */
+	background-color   : #708273 ;
+}
+
+nav div
+{
+	text-align : center ;
+}
+
+nav a
+{
+	padding-left   : 5px ;
+}
+
+section
+{
+	margin-left   : 170px; /* pour ne pas écrire sous la partie nav */
+	margin-right  : 170px;
+}
+
+aside
+{
+	/* Position Properties */
+	float    : right;
+	top      : 10px ;
+	position : sticky ;
+	
+	/* Box Properties */
+	border       : 2px solid #262b27 ;
+	height       : 100% ;
+	width        : 150px ;
+	box-shadow   : 0px 0px 4px 1px ;
+	
+	/* Background Properties */
+	background-color   : #708273 ;
+}
+
+footer
+{
+	/* Box Properties */
+	position                  : absolute ;
+	border-style              : solid ;
+	border-color              : #262b27 ;
+	border-width              : 2px ;
+	border-collapse           : separate ;
+	border-top-left-radius    : 10px ;
+	border-top-right-radius   : 10px ;
+	padding-bottom            : 5px ;
+	padding-top               : 10px ;
+	box-shadow                : 0px 0px 4px 1px ;
+	margin-top                : 10px ;
+	width                     : 100% ;
+	
+	
+	/* Background Properties */
+	background-color   : #708273 ;
+}
+
+.evilabsolutetext
+{
+	position : absolute ;
+	top      : 30% ;
+	left     : 30% ;
+	
+	color       : red ;
+	font-size   : 50px ;
+}
+
+.output
+{
+	border-style : solid ;
+	border-color : black ;
+  border-width : 1px ;
+	
+	background-color   : white ;
+	
+	width  : 10em ;
+  height : 1.25em ;
+	
+	padding      : 0.1em ;
+	padding-left : 0.25em ;
+}
+
+.label
+{
+	padding-bottom : 0 ;
+	font-size: 90% ;
+}
